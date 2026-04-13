@@ -283,6 +283,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* The Scope */}
+      <section className="max-w-4xl mx-auto px-5 py-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
+          Five domains to start. <span className="text-[#c084fc]">Every problem eventually.</span>
+        </h2>
+        <p className="text-[#888] text-center mb-8 max-w-2xl mx-auto">
+          We launch with climate, water, food, biodiversity, and pandemic preparedness -- the five domains with
+          the clearest path from research to implementation. But the architecture is domain-agnostic by design.
+        </p>
+        <div className="card p-8">
+          <p className="text-sm text-[#888] leading-relaxed mb-4">
+            Medicine. Housing. Education. Energy. Poverty. Mental health. Infrastructure. Disaster response.
+            Elder care. Disability access. Soil degradation. Antibiotic resistance. Maternal mortality.
+            Childhood malnutrition. Refugee resettlement. Digital literacy. Microplastic contamination.
+            Urban heat islands. Ocean dead zones. Criminal justice reform. Indigenous land rights.
+          </p>
+          <p className="text-sm text-[#888] leading-relaxed mb-4">
+            Every problem facing humanity that has researchable solutions and implementable interventions
+            is within scope. The knowledge graph, the proposals system, the implementation engine, the
+            dispatch layer -- none of these are specific to climate or water. They work for any problem
+            where scientific evidence can inform real-world action.
+          </p>
+          <p className="text-sm text-white leading-relaxed">
+            This is intentionally ambitious. The goal is not to pick five problems and call it done.
+            The goal is to build the coordination infrastructure that can eventually address every solvable
+            problem on Earth -- and to prove it works on the hardest ones first.
+          </p>
+        </div>
+        <p className="text-xs text-[#555] text-center mt-4">
+          Domain expansion requires a 2/3 board vote AND a demonstrated implementation record in an existing domain.
+        </p>
+      </section>
+
       {/* CTA */}
       <section className="max-w-6xl mx-auto px-5 py-16">
         <div className="card p-12 md:p-16 text-center relative overflow-hidden">

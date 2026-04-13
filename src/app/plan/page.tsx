@@ -29,7 +29,25 @@ export default function PlanPage() {
           funded, globally distributed implementation workforce that reports to a mission instead of a shareholder.
         </p>
 
-        <h3 className="text-xl font-bold mb-4 text-[#4ade80]">Five Crisis Domains</h3>
+        <div className="card p-6 mb-8 border-l-4 border-l-[#c084fc]">
+          <h4 className="font-bold mb-2 text-[#c084fc]">The Starting Five -- And Everything That Follows</h4>
+          <p className="text-sm text-[#888] leading-relaxed mb-3">
+            GOOD TEAM launches with five crisis domains. This is not the ceiling -- it is the floor.
+            Every problem facing humanity that has researchable solutions and implementable interventions
+            is within scope: medicine, housing, education, energy, poverty, mental health, infrastructure,
+            disaster response, elder care, disability access, antibiotic resistance, maternal mortality,
+            childhood malnutrition, refugee resettlement, microplastic contamination, and beyond.
+          </p>
+          <p className="text-sm text-[#888] leading-relaxed">
+            The architecture is domain-agnostic by design. The starting five were chosen because they have
+            the clearest path from research to implementation. Domain expansion requires a 2/3 board vote
+            AND demonstrated implementation in an existing domain. The ambition is to build coordination
+            infrastructure that can eventually address every solvable problem on Earth -- and to prove it
+            works on the hardest ones first.
+          </p>
+        </div>
+
+        <h3 className="text-xl font-bold mb-4 text-[#4ade80]">The Starting Five</h3>
         <div className="space-y-3 mb-8">
           {[
             { domain: "Climate Change", detail: "Reforestation, renewable energy deployment, building insulation, soil carbon restoration, ocean-based carbon removal. The science is settled. The deployment is not organized.", target: "Coordinate volunteer tree-planting brigades linked to scientifically validated species/location pairings. Partner with One Tree Planted, Eden Reforestation. Deploy air quality monitoring networks." },

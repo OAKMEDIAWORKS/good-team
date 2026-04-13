@@ -21,7 +21,6 @@ function Navbar() {
           {[
             { label: "Mission", href: "/mission" },
             { label: "The Plan", href: "/plan" },
-            { label: "Platform", href: "/problems" },
             { label: "About", href: "/about" },
           ].map((l) => (
             <a
@@ -35,11 +34,11 @@ function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <a href="/dashboard" className="px-3.5 py-1.5 rounded-lg text-sm text-[#888] hover:text-white hover:bg-[#1e1e1e] transition-all hidden sm:block">
-            Dashboard
+          <a href="https://github.com/OAKMEDIAWORKS/good-team" target="_blank" rel="noopener noreferrer" className="px-3.5 py-1.5 rounded-lg text-sm text-[#888] hover:text-white hover:bg-[#1e1e1e] transition-all hidden sm:block">
+            GitHub
           </a>
-          <a href="/auth" className="btn-primary !py-2 !px-5 !text-sm">
-            Join
+          <a href="/about#get-involved" className="btn-primary !py-2 !px-5 !text-sm">
+            Get Involved
           </a>
         </div>
       </div>
@@ -54,10 +53,11 @@ function Footer() {
         <div className="flex items-center gap-6 text-sm text-[#555]">
           <span>AGPL-3.0</span>
           <span>CC BY 4.0</span>
-          <a href="/about" className="hover:text-white transition-colors">About</a>
-          <a href="https://github.com" className="hover:text-white transition-colors">GitHub</a>
+          <a href="/mission" className="hover:text-white transition-colors">Mission</a>
+          <a href="/plan" className="hover:text-white transition-colors">Plan</a>
+          <a href="https://github.com/OAKMEDIAWORKS/good-team" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
         </div>
-        <p className="text-sm text-[#555]">Open source. All knowledge belongs to everyone.</p>
+        <p className="text-sm text-[#555]">Tim Oakley / OAK Media -- Great Barrington, MA</p>
       </div>
     </footer>
   );

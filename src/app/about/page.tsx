@@ -1,76 +1,170 @@
 export default function AboutPage() {
   return (
-    <div className="max-w-3xl mx-auto px-5 py-16">
-      <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-        The world's problems are
-        <br />
-        <span className="text-[#4ade80]">solvable.</span>
-      </h1>
-
-      <p className="text-lg text-[#888] leading-relaxed mb-12">
-        The knowledge to solve climate change exists — scattered across thousands of papers
-        no one person can read. The solutions exist — but no one is coordinating the work.
-        GOOD TEAM connects AI research with human action in one open platform.
-      </p>
-
-      {/* How */}
-      <div className="space-y-3 mb-16">
-        {[
-          { title: "Research gets processed", desc: "Volunteers analyze papers using tools like Claude and ChatGPT. Findings become structured knowledge nodes — claims, methods, datasets, questions.", color: "border-[#4ade80]/30", dot: "bg-[#4ade80]" },
-          { title: "People do the work", desc: "Photograph coastlines. Test water quality. Plant trees. Collect data. Real-world tasks that need human hands.", color: "border-[#67e8f9]/30", dot: "bg-[#67e8f9]" },
-          { title: "Knowledge compounds", desc: "Every contribution connects to others. Contradictions surface. Gaps become tasks. The graph gets smarter with every loop.", color: "border-[#c084fc]/30", dot: "bg-[#c084fc]" },
-        ].map((s, i) => (
-          <div key={i} className={`card p-5 border-l-2 ${s.color} flex items-start gap-4`}>
-            <div className={`w-3 h-3 rounded-full ${s.dot} mt-1.5 shrink-0`} />
-            <div>
-              <h3 className="font-bold mb-0.5">{s.title}</h3>
-              <p className="text-sm text-[#888]">{s.desc}</p>
-            </div>
-          </div>
-        ))}
+    <div className="max-w-4xl mx-auto px-5 py-16">
+      <div className="text-center mb-16">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">About GOOD TEAM</h1>
+        <p className="text-lg text-[#888] max-w-2xl mx-auto">
+          Who we are, how we're structured, and how to join the founding team.
+        </p>
       </div>
 
-      {/* Principles */}
-      <h2 className="text-2xl font-bold mb-6">Non-negotiable</h2>
-      <div className="grid sm:grid-cols-2 gap-3 mb-16">
-        {[
-          { title: "Open source", desc: "AGPL-3.0. Fork it. Audit it. Run your own.", color: "text-[#4ade80]" },
-          { title: "No corporate capture", desc: "No fossil fuel, tobacco, weapons, or surveillance money.", color: "text-[#ff6b6b]" },
-          { title: "Community governed", desc: "Elected council. Rules in the repo. No single owner.", color: "text-[#c084fc]" },
-          { title: "Knowledge is free", desc: "CC-BY-SA 4.0. Every finding belongs to everyone.", color: "text-[#67e8f9]" },
-          { title: "Truth over speed", desc: "Dual validation. Adversarial review. Confidence decay.", color: "text-[#fcd34d]" },
-          { title: "Full transparency", desc: "Environmental costs published. Every dollar tracked.", color: "text-[#f472b6]" },
-        ].map((p) => (
-          <div key={p.title} className="card p-5">
-            <h3 className={`font-bold mb-1 ${p.color}`}>{p.title}</h3>
-            <p className="text-sm text-[#888]">{p.desc}</p>
-          </div>
-        ))}
-      </div>
+      {/* Who */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold mb-6">Who's behind this</h2>
+        <div className="card p-8">
+          <h3 className="text-lg font-bold mb-2">Tim Oakley</h3>
+          <p className="text-sm text-[#888] leading-relaxed mb-4">
+            Founder. OAK Media -- Great Barrington, Massachusetts.
+          </p>
+          <p className="text-sm text-[#888] leading-relaxed">
+            GOOD TEAM is being built openly from day one. There is no venture capital, no corporate sponsor,
+            and no hidden agenda. The plan is public. The code is public. The finances will be public.
+            The goal is to build something that outlasts any individual -- including the founder.
+          </p>
+        </div>
+      </section>
 
-      {/* Funding rules */}
-      <h2 className="text-2xl font-bold mb-4">Money rules</h2>
-      <div className="card p-6 mb-16">
-        <div className="space-y-3 text-sm">
+      {/* Structure */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold mb-6">How we're structured</h2>
+        <div className="space-y-3">
+          <div className="card p-6">
+            <h3 className="font-bold mb-2">Legal Entity</h3>
+            <p className="text-sm text-[#888] leading-relaxed">
+              Delaware 501(c)(3) nonprofit (filing). Operating under Open Collective Foundation fiscal
+              sponsorship from day one for immediate tax-deductible donation capability and full financial transparency.
+            </p>
+          </div>
+          <div className="card p-6">
+            <h3 className="font-bold mb-2">Code License</h3>
+            <p className="text-sm text-[#888] leading-relaxed">
+              AGPL-3.0. All derivatives must remain open source. Anyone can audit, fork, and run their own
+              instance. The platform cannot be made proprietary by anyone, ever.
+            </p>
+          </div>
+          <div className="card p-6">
+            <h3 className="font-bold mb-2">Knowledge License</h3>
+            <p className="text-sm text-[#888] leading-relaxed">
+              CC BY 4.0 on all research outputs, datasets, implementation guides, and field observations.
+              This is locked in the articles of incorporation and cannot be changed without a 3/4 member vote
+              and 90-day public notice. Knowledge belongs to everyone.
+            </p>
+          </div>
+          <div className="card p-6">
+            <h3 className="font-bold mb-2">Governance</h3>
+            <p className="text-sm text-[#888] leading-relaxed">
+              Founder-led until 100+ active contributors, then transitions to elected Contributor Council
+              (5-7 members, annual elections). All governance decisions happen in public via GitHub. Rules
+              are in the repo. Quadratic voting for major decisions.
+            </p>
+          </div>
+          <div className="card p-6">
+            <h3 className="font-bold mb-2">Finances</h3>
+            <p className="text-sm text-[#888] leading-relaxed">
+              All money flows through OpenCollective -- every donation, every payment, every expense is
+              publicly visible in real-time. Multi-sig treasury for amounts above $5,000. No single donor
+              may contribute more than 25% of annual funding. Annual independent CPA audit published in full.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Funding Rules */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold mb-6">Funding rules</h2>
+        <div className="grid sm:grid-cols-2 gap-3">
           {[
-            "No single donor > 10% of annual funding",
-            "No $1B+ company without unanimous council approval",
-            "No money from industries causing the problems we solve",
-            "All donors public. All spending transparent",
-          ].map((r, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shrink-0" />
-              <span className="text-[#ccc]">{r}</span>
+            { rule: "No single donor > 25%", detail: "No entity can control GOOD TEAM through funding concentration" },
+            { rule: "No conflict industries", detail: "No fossil fuel, tobacco, weapons, surveillance, or gambling money" },
+            { rule: "No IP strings", detail: "No grants that require exclusive licensing or restrict CC BY 4.0 outputs" },
+            { rule: "All terms published", detail: "Every grant agreement and donor relationship is publicly documented" },
+            { rule: "Multi-sig for > $5k", detail: "3-of-5 keyholders from different geographic regions must approve" },
+            { rule: "Annual public audit", detail: "Independent CPA audit published within 120 days of fiscal year end" },
+          ].map((r) => (
+            <div key={r.rule} className="card p-5">
+              <h4 className="font-bold text-sm mb-1 text-[#4ade80]">{r.rule}</h4>
+              <p className="text-xs text-[#888]">{r.detail}</p>
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
-      {/* CTA */}
-      <div className="text-center">
-        <p className="text-[#555] mb-4">Come help.</p>
-        <a href="/tasks/ai" className="btn-primary">Do your first task</a>
-      </div>
+      {/* Advisory Board */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold mb-6">Advisory board</h2>
+        <p className="text-sm text-[#888] leading-relaxed mb-4">
+          We are recruiting 5-8 founding advisors before public platform launch. Target backgrounds:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-3">
+          {[
+            "Climate scientist from a recognized university",
+            "Distributed systems researcher (BOINC/Folding@home background)",
+            "Open science practitioner (OSF, Zenodo, OpenAlex community)",
+            "Nonprofit governance specialist",
+            "Global South researcher or practitioner",
+            "Field implementation expert (NGO operations)",
+          ].map((a) => (
+            <div key={a} className="flex items-start gap-3 py-3 px-4 rounded-xl bg-[#141414] border border-[#1e1e1e]">
+              <span className="text-[#c084fc] shrink-0 mt-0.5">+</span>
+              <span className="text-sm text-[#888]">{a}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-[#555] mt-4">If this describes you or someone you know, please reach out.</p>
+      </section>
+
+      {/* Get Involved */}
+      <section id="get-involved" className="mb-16">
+        <h2 className="text-2xl font-bold mb-6">Get involved</h2>
+        <p className="text-[#888] leading-relaxed mb-8">
+          GOOD TEAM is looking for founding members -- the first people who help shape what this becomes.
+          No minimum commitment. No prerequisites. Just a willingness to contribute to something real.
+        </p>
+
+        <div className="space-y-3">
+          {[
+            { role: "Researchers & Scientists", what: "Help validate prompts, design research protocols, review knowledge graph outputs, co-author publications. Environment, climate, water, food systems, or public health expertise especially valued.", action: "Reach out with your background and interests" },
+            { role: "Developers", what: "Next.js, TypeScript, PostgreSQL, Supabase. The codebase is on GitHub. Good first issues always available. Backend, frontend, data pipeline, and mobile all needed.", action: "Fork the repo and start contributing" },
+            { role: "Designers", what: "Design system, onboarding flow, knowledge graph visualization, mobile app UX, and contribution dashboards. Figma preferred.", action: "Reach out with your portfolio" },
+            { role: "Field Workers & Citizen Scientists", what: "When field tasks launch, we need people willing to photograph coastlines, test water, collect data, and report observations from their local area.", action: "Join the community to be notified when field tasks go live" },
+            { role: "Writers & Translators", what: "Research summaries, task descriptions, community communications, and multilingual support. Clear writing that makes complex science accessible.", action: "Reach out with writing samples or language skills" },
+            { role: "Anyone Who Cares", what: "The simplest contributions take 5 minutes. No skills required. Claim a task and paste a prompt. That's it. You just contributed to solving a real problem.", action: "Join the community and say hello" },
+          ].map((r) => (
+            <div key={r.role} className="card p-6">
+              <h3 className="font-bold mb-2 text-[#4ade80]">{r.role}</h3>
+              <p className="text-sm text-[#888] leading-relaxed mb-2">{r.what}</p>
+              <p className="text-sm text-[#555] italic">{r.action}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Links */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-6">Connect</h2>
+        <div className="grid sm:grid-cols-2 gap-3">
+          <a href="https://github.com/OAKMEDIAWORKS/good-team" target="_blank" rel="noopener noreferrer" className="card p-6 hover:border-[#4ade80]/40 transition-colors">
+            <h3 className="font-bold mb-1">GitHub</h3>
+            <p className="text-sm text-[#888]">Code, issues, discussions</p>
+            <p className="text-sm text-[#4ade80] mt-2">github.com/OAKMEDIAWORKS/good-team</p>
+          </a>
+          <div className="card p-6">
+            <h3 className="font-bold mb-1">Discord</h3>
+            <p className="text-sm text-[#888]">Community chat and coordination</p>
+            <p className="text-sm text-[#555] mt-2">Coming soon</p>
+          </div>
+          <div className="card p-6">
+            <h3 className="font-bold mb-1">OpenCollective</h3>
+            <p className="text-sm text-[#888]">Transparent finances and donations</p>
+            <p className="text-sm text-[#555] mt-2">Coming soon</p>
+          </div>
+          <div className="card p-6">
+            <h3 className="font-bold mb-1">Contact</h3>
+            <p className="text-sm text-[#888]">Tim Oakley / OAK Media</p>
+            <p className="text-sm text-[#555] mt-2">Great Barrington, MA</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

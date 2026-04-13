@@ -12,9 +12,9 @@ export default function AboutPage() {
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6">Who's behind this</h2>
         <div className="card p-8">
-          <h3 className="text-lg font-bold mb-2">Tim Oakley</h3>
+          <h3 className="text-lg font-bold mb-2">Timothy Oakley</h3>
           <p className="text-sm text-[#888] leading-relaxed mb-4">
-            Founder. OAK Media -- Great Barrington, Massachusetts.
+            Founder. Oak Media Works -- Great Barrington, Massachusetts.
           </p>
           <p className="text-sm text-[#888] leading-relaxed">
             GOOD TEAM is being built openly from day one. There is no venture capital, no corporate sponsor,
@@ -160,7 +160,7 @@ export default function AboutPage() {
           </div>
           <div className="card p-6">
             <h3 className="font-bold mb-1">Contact</h3>
-            <p className="text-sm text-[#888]">Tim Oakley / OAK Media</p>
+            <p className="text-sm text-[#888]">Timothy Oakley / Oak Media Works</p>
             <p className="text-sm text-[#555] mt-2">Great Barrington, MA</p>
           </div>
         </div>

@@ -57,7 +57,7 @@ function Footer() {
           <a href="/plan" className="hover:text-white transition-colors">Plan</a>
           <a href="https://github.com/OAKMEDIAWORKS/good-team" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
         </div>
-        <p className="text-sm text-[#555]">Tim Oakley / OAK Media -- Great Barrington, MA</p>
+        <p className="text-sm text-[#555]">Timothy Oakley / Oak Media Works -- Great Barrington, MA</p>
       </div>
     </footer>
   );

@@ -125,7 +125,7 @@ export default function MissionPage() {
 
       {/* Contact */}
       <div className="mt-12 text-center text-sm text-[#555]">
-        <p>Tim Oakley / OAK Media -- Great Barrington, MA</p>
+        <p>Timothy Oakley / Oak Media Works -- Great Barrington, MA</p>
         <p className="mt-1">CC BY 4.0 -- Share freely with attribution</p>
       </div>
     </div>
